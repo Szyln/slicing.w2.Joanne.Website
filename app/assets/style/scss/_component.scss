@@ -1,17 +1,55 @@
+// 第一版，沒加 flex，.mark-list-dot的底會對齊 baseline
+// mark-list {
+//   line-height: 42px;
+//   margin-bottom: -28px;
+//   &-dot {
+//     display: inline-block;
+//     background-color: #891818;
+//     border-radius: 50%;
+//     width: 22px;
+//     height: 22px;
+//     margin-right: 8px;
+//   }
+//   &-item {
+//     margin-bottom: 28px;
+//   }
+// }
 
 
+// 第二版，有加 flex ，.mark-list-dot用 meterial icon，沒辦法很剛好的 22px
+// .mark-list {
+//   line-height: 42px;
+//   margin-bottom: -28px;
+//   &-item {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin-bottom: 28px;
+//   }
+//   &-dot {
+//     color: #891818;
+//     font-size: 22px;
+//     margin-right: 8px;
+//   }
+// }
+
+
+// 第三版，綜合上方兩種，拿掉 material icon 用背景，再加上 flex 
 .mark-list {
   line-height: 42px;
   margin-bottom: -28px;
-  &-dot {
-    display: inline-block;
-    background-color: #891818;
-    border-radius: 50%;
-    width: 22px;
-    height: 22px;
-    margin-right: 8px;
-  }
   &-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 28px;
+  }
+  &-dot {
+    background-color: #891818;
+    height:22px;
+    width: 22px;
+    border-radius: 50%;
+    font-size: 22px;
+    margin-right: 8px;
   }
 }
