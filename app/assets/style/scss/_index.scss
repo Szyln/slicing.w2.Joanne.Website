@@ -1,6 +1,6 @@
 .banner {
-  background: fixed url(https://hexschool.github.io/webLayoutTraining1st/week2/banner.png) center / cover no-repeat; 
-  height: 100vh; 
+  background: fixed url(https://hexschool.github.io/webLayoutTraining1st/week2/banner.png) center center / cover no-repeat; 
+  height: 958px; 
   &__title {
     font-size: 80px;
     line-height: 106px;
@@ -15,7 +15,9 @@
 
 
 .brand-img {
+  margin-bottom: -40px;
   &-item {
+    margin-bottom: 40px;
     &-1 {
       width:100%;
     }
@@ -25,10 +27,7 @@
   }
 }
 
-.gallery {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 
 
 .line {
